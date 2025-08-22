@@ -22,3 +22,9 @@ function mostrarAmigos() {
         console.log(a);
     });    
 }
+
+function sortearAmigo() {
+    let amigoSorteado =  Math.floor(Math.random() * amigos.length);
+    document.getElementById('resultado').innerHTML =`Tu amigo secreto es: ${amigos[amigoSorteado]}`;
+    console.log(amigoSorteado);
+}
