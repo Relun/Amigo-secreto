@@ -10,15 +10,15 @@ function agregarAmigo() {
     amigos.push(amigo); 
     document.getElementById('amigo').value = '';
 
-    //console.log(amigos);
-    //mostrarAmigos();
+    console.log(amigos);
+    mostrarAmigos();
 }
 
-/*function mostrarAmigos() {
-    amigos.map(a => {
+function mostrarAmigos() {
+    document.getElementById('listaAmigos').innerHTML = '';
+    amigos.forEach(a => {
         //ul id=listaAmigos
-        document.getElementById('listaAmigos').innerHTML=`<li> ${a} </li>`;
+        document.getElementById('listaAmigos').innerHTML +=`<li> ${a} </li>`;
         console.log(a);
-    });
-    
-}*/
+    });    
+}
